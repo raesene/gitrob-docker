@@ -14,3 +14,8 @@ then
 `docker-compose up`
 
 should do the job.
+
+ToDo
+--
+
+Need to extract the version of the gitrob gem that we're installing, to make sure if/when it changes our agreement.txt hack still works
