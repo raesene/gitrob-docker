@@ -1,0 +1,14 @@
+version: '3'
+services:
+  gitrob:
+    build: .
+    ports:
+     - "9393:9393"
+    environment:
+      GITHUB_API_KEY: cffffcba1e1cffffffffeffff8bacaffff57225c
+
+  postgres:
+    image: "postgres:9.3-alpine"
+    environment:
+      POSTGRES_PASSWORD: gitrob
+      POSTGRES_USER: gitrob
